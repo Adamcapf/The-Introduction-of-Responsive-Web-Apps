@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            h2{
+                color : green;
+            }
+        </style>
+        <link rel = "stylesheet" type = "text/css" href = "./t2.css"/>
+        <script>
+            function greetingFunc(){
+                var greeting;
+                var time = new Date().getHours();
+                if (time < 10){
+                    greeting = "Good morning";
+                }
+                else if (time < 20){
+                    greeting = "Good day";
+                }
+                else{
+                    greeting = "Good evening";
+                }
+                document.getElementById("greet").innerHTML(greeting);
+            }
+        </script>
+        <title>My First Page</title>
+    </head>
+    <body>
+        <img src = './Deakin_logo.png' alt = 'Deakin logo' height="80" width="110">
+        <h1 style = "color : blue">Deakin Informaton</h1>
+        <h2>Faculties and divisions</h2>
+        <ul>
+            <li>Faculty of Arts and Education</li>
+            <li>Faculty of Business and Law</li>
+            <li>Faculty of Health</li>
+            <li>Faculty of Science, Engineering and Built Environment</li>
+        </ul>
+        <h2>connect with us</h2>
+        <p id = "greet">Please enter your information</p>
+        <button onclick = "greetingFunc()">Greeting</button><br>
+        First Name: <input type = 'text' name = 'name' value = 'First name' size = n maxlength = n>
+        Last Name: <input type = 'text' name = 'name' value = 'Last name' size = n maxlength = n><br>
+        Gender: 
+        <table bordercolor = "grey">
+            <tr>
+                <td><input type = 'checkbox' name = 'gender' value = 'male'> male</td>
+                <td><input type = 'checkbox' name = 'gender' value = 'male'> female</td>
+            </tr>
+        </table>
+        Address Line 1: 
+        <select>
+            <option value = 'NSW'>NSW</option>
+            <option value = 'VIC'>VIC</option>
+            <option value = 'QLD'>QLD</option>
+        </select>
+    </body>
+</html>
